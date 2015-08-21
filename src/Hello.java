@@ -21,11 +21,9 @@ public class Hello extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		response.setContentType("text/html");
-		PrintWriter out = response.getWriter();
+		//PrintWriter out = response.getWriter();
 		
-		out.print("<html><body>");
-		out.print("<h3>Hello Servlet<h3>");
-		out.print("</body></html>");
+		 response.sendRedirect("http://www.google.com");
 		
 	}
 
